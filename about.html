@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closet das Gemeas - Moda Feminina</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #f8e1e4;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .logo-container {
+            flex-shrink: 0;
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-text {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .brand-name {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        section {
+            padding: 3rem 2rem;
+        }
+
+        .about {
+            background-color: #fff;
+        }
+
+        .products {
+            background-color: #f9f9f9;
+        }
+
+        .contact {
+            background-color: #fff;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .placeholder-img {
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #666;
+        }
+
+        .contact-info {
+            background-color: #f8e1e4;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo-container {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./closet.jpg" />
+        </div>
+        <div class="header-text">
+            <div class="brand-name">Closet das Gemeas</div>
+            <p>Sua loja online de moda feminina</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="./about.html">Sobre</a>
+        <a href="./test.html">Politica e termos de uso</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <section id="about" class="about">
+        <h1>Sobre Nossa Loja</h1>
+        <p>O Closet das Gemeas é uma loja virtual especializada em moda feminina, oferecendo as últimas tendências em roupas e acessórios com preços acessíveis e qualidade premium.</p>
+        <p>Fundada em 2023, nossa missão é proporcionar uma experiência de compra única, com atendimento personalizado e produtos selecionados para mulheres que buscam estilo e conforto.</p>
+    </section>
+
+
+    <footer>
+        <p>© 2024 Closet das Gemeas - Todos os direitos reservados</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/closetdasgemeas__/">Instagram</a>
+            <a href="https://www.facebook.com/closetdasgemeas__/">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>
