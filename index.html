@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Closet das Gemeas - Moda Feminina</title>
     <style>
-        * {
+         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -19,10 +19,29 @@
         header {
             background-color: #f8e1e4;
             padding: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .logo-container {
+            flex-shrink: 0;
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-text {
+            flex-grow: 1;
             text-align: center;
         }
 
-        .logo {
+        .brand-name {
             font-size: 2.5rem;
             color: #333;
             margin-bottom: 1rem;
@@ -113,20 +132,36 @@
             margin: 0 1rem;
             text-decoration: none;
         }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo-container {
+                margin: 0 auto;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">Closet das Gemeas</div>
-        <p>Sua loja online de moda feminina</p>
+        <div class="logo-container">
+            <img src="./closet.jpg" />
+        </div>
+        <div class="header-text">
+            <div class="brand-name">Closet das Gemeas</div>
+            <p>Sua loja online de moda feminina</p>
+        </div>
     </header>
 
-    
     <nav>
         <a href="./index.html">Home</a>
         <a href="./about.html">Sobre</a>
         <a href="./policy.html">Politica e termos de uso</a>
     </nav>
+    
 
     <section id="about" class="about">
         <h1>Sobre Nossa Loja</h1>
@@ -138,19 +173,14 @@
         <h2>Nossos Produtos</h2>
         <div class="grid">
             <div class="product-card">
-                <div class="placeholder-img">Imagem do Produto</div>
+                <div class="placeholder-img"><img src="sample1.jpg" style="width: 400px; height: 200px;"/></div>
                 <h3>Roupas Femininas</h3>
-                <p>Vestidos, blusas, calças, shorts e saias das últimas tendências.</p>
+                <p>Conjuntos das últimas tendências.</p>
             </div>
             <div class="product-card">
-                <div class="placeholder-img">Imagem do Produto</div>
+                <div class="placeholder-img"><img src="sample2.jpg" style="width: 400px; height: 200px;"/></div>
                 <h3>Acessórios</h3>
                 <p>Bolsas, bijuterias e outros acessórios para complementar seu look.</p>
-            </div>
-            <div class="product-card">
-                <div class="placeholder-img">Imagem do Produto</div>
-                <h3>Coleções Especiais</h3>
-                <p>Peças exclusivas e edições limitadas.</p>
             </div>
         </div>
     </section>
